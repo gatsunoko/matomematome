@@ -1,0 +1,9 @@
+<h1>Sites#index</h1>
+<%= link_to "新規記事作成", new_site_path %>
+<hr>
+<% @sites.each do |site| %>
+	<%= site.sitename %>
+	<%= link_to "編集", edit_site_path(site) %>
+	<%= site.order %>
+	<hr>
+<% end %>

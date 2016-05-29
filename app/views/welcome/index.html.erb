@@ -1,0 +1,14 @@
+<div id="articles">
+<% @articles.each do |article| %>
+	<p class="titledate"><%= article.hpname %> : <%= article.articledate.strftime('%m月%d日 %H:%M') %></p>
+	<%= link_to article.title, article.url, :target=>["_blank"], class: :article_link %><hr>
+<% end -%>
+</div>
+
+<div id="side_bar">
+	<%= link_to "全部表示", welcome_index_path %><br><br>
+	<% @sites.each do |site| %>
+		<%= link_to site.sitename, welcome_path(site, sitename: site.sitename) %><br><br>
+	<% end -%>
+</div>
+<div id="footer"></div>

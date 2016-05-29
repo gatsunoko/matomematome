@@ -1,0 +1,12 @@
+<%= form_for @site do |f| %>
+	<% if @site.errors.any? %>
+		<%= @site.errors.count %>個のエラーがあります。<br>
+		<%= @site.errors.full_messages.each do |msg| %>
+			<%= msg %><br>
+		<% end -%>
+	<% end -%>
+
+	<%= f.text_field :sitename %><br>
+	<%= f.text_field :order %><br>
+	<%= f.submit %>
+<% end -%>

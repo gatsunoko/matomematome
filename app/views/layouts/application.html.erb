@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+  <title>まとめのまとめ</title>
+  <meta name="description" content="主要まとめサイトのトップ記事をまとめる">
+  <meta name="keywords" content="まとめサイト,まとめ,2ch,まとめのまとめ">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<strong>まとめをまとめる</strong>
+		</div>
+		<div id="content">
+			<%= yield %>
+		</div>
+	</div>
+</body>
+</html>

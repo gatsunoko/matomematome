@@ -1,0 +1,6 @@
+<%#= link_to doc.text, doc["href"], :target=>["_blank"], class: :article_link %>
+<%#= 取得してきた日付と時間のstirngテキストを日付型に変換 %>
+<% @datetime = DateTime.parse(doc.css(date)[0][:title]) %>
+<%#= 日付の書式をフォーマット %>
+<%= @datetime.strftime('%m月%d日 %H:%M') %><br>
+<%= link_to doc.css(article).text, doc.css(article)[0][:href], :target=>["_blank"], class: :article_link %><br><br>

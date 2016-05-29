@@ -1,0 +1,11 @@
+/home/ec2-user/.rbenv/versions/2.2.3/bin/ruby -r ./siteconf20160528-11339-1ru45io.rb extconf.rb
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling debug_inspector.c
+linking shared-object debug_inspector.so
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 debug_inspector.so ./.gem.20160528-11339-1b7d9p6

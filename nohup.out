@@ -1,0 +1,13 @@
+WARN: Unresolved specs during Gem::Specification.reset:
+      json (>= 1.7.7, ~> 1.7)
+WARN: Clearing out unresolved specs.
+Please report a bug if this causes problems.
+I, [2016-05-29T08:43:56.864663 #4683]  INFO -- : Starting clock for 1 events: [ less.frequent.job ]
+I, [2016-05-29T08:43:56.864742 #4683]  INFO -- : Triggering 'less.frequent.job'
+"end!!!!"
+I, [2016-05-29T08:53:56.001267 #4683]  INFO -- : Triggering 'less.frequent.job'
+"end!!!!"
+I, [2016-05-29T09:03:56.001228 #4683]  INFO -- : Triggering 'less.frequent.job'
+"end!!!!"
+I, [2016-05-29T09:13:56.001235 #4683]  INFO -- : Triggering 'less.frequent.job'
+"end!!!!"

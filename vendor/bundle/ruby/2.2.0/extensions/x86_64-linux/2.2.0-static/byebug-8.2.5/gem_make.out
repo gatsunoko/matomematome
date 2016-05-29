@@ -1,0 +1,15 @@
+/home/ec2-user/.rbenv/versions/2.2.3/bin/ruby -r ./siteconf20160528-11339-k66p3x.rb extconf.rb
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling locker.c
+compiling byebug.c
+compiling context.c
+compiling breakpoint.c
+compiling threads.c
+linking shared-object byebug/byebug.so
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 byebug.so ./.gem.20160528-11339-11oos9w/byebug
